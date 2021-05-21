@@ -1,0 +1,22 @@
+{
+	"name": "kernel",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "kernel",
+	"workspaceFolder": "/workspace",
+
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"files.trimTrailingWhitespace": true,
+		"files.insertFinalNewline": true,
+		"files.trimFinalNewlines": true
+	},
+
+	"extensions": [
+		"ms-python.python",
+		"visualstudioexptteam.vscodeintellicode",
+		"donjayamanne.githistory"
+	],
+
+	"forwardPorts": [8000],
+	"remoteUser": "vscode"
+}

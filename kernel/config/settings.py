@@ -19,6 +19,9 @@ INSTALLED_APPS = [
 
     'graphene_django',
     'corsheaders',
+
+    # Own apps
+    'utils',
 ]
 
 MIDDLEWARE = [

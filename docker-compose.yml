@@ -1,0 +1,39 @@
+version: '3.7'
+
+services:
+  webclient:
+    user: node
+    build: ./client
+    volumes:
+      - './client:/workdir'
+    command: /bin/bash -c "while true; do echo faking deamon; sleep 60; done"
+  db:
+    image: 'postgres:12.4'
+    environment: 
+        POSTGRES_DB: db
+        POSTGRES_USER: developer
+        POSTGRES_PASSWORD: Passw0rd33
+    volumes:
+      - ./db:/var/lib/postgresql/data
+  web:
+    volumes:
+      - ./kernel:/app
+      - ./kernel/static:/app/static
+      - ./kernel/media:/app/media
+    env_file:
+      - ./kernel/.env
+    build: ./kernel
+    ports:
+      - '8000:8000'
+  nginx:
+    build: ./nginx
+    volumes:
+      - ./kernel/static:/static
+      - ./kernel/media:/media
+    ports:
+      - '80:80'
+    depends_on:
+      - web
+
+volumes:
+  static:

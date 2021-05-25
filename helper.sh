@@ -3,6 +3,7 @@
 PROJECT=${PWD##*/}
 
 if [[ $1 = 'config' ]]; then
+    rm -rf docs/
     cat ./kernel/.env.example >> ./kernel/.env
     echo "Don't forget to change your SECRET_KEY"
     echo "https://djecrety.ir/ can help you!"

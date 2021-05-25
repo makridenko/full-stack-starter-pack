@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-if [[ $1 = 'startapp' ]]; then
+if [[ $1 = 'app' ]]; then
     ./dmanage.py startapp --template app_template $2
     exit 1
 fi
@@ -19,6 +19,11 @@ fi
 
 if [[ $1 = 'gql' ]]; then
     ./dmanage.py graphql_schema --indent 2
+    exit 1
+fi
+
+if [[ $1 = 'su' ]]; then
+    ./dmanage.py createsuperuser
     exit 1
 fi
 

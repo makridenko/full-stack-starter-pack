@@ -9,17 +9,17 @@ Template designed for docker and vscode (remote-containers).
 
 ## Stack
 
-Name | Link
+Name | Pic
 -----|-----
-Django | ![django](docs/images/django.png)
-PostgreSQL | ![postgresql](docs/images/postgresql.png)
-Graphene Python | ![graphene](docs/images/graphene.png)
-GraphQL | ![graphql](docs/images/graphql.png)
-React | ![react](docs/images/react.png)
-Relay | ![relay](docs/images/relay.png)
-React Styled-Components | ![styled-components](docs/images/styled-components.png)
-Docker | ![docker](docs/images/docker.png)
-Nginx | ![nginx](docs/images/nginx.png)
+Django | <img src='docs/images/django.png' width='250' height='100' />
+PostgreSQL | <img src='docs/images/postgresql.png' width='150' height='100' />
+Graphene Python | <img src='docs/images/graphene.png' width='250' height='100' />
+GraphQL | <img src='docs/images/graphql.png' width='100' height='100' />
+React | <img src='docs/images/react.png' width='130' height='100' />
+Relay | <img src='docs/images/relay.png' width='100' height='100' />
+React Styled-Components | <img src='docs/images/styled-components.png' width='100' height='100' />
+Docker | <img src='docs/images/docker.png' width='120' height='100' />
+Nginx | <img src='docs/images/nginx.png' width='250' height='70' />
 
 ## Using this template
 

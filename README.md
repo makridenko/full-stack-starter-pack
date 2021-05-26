@@ -32,6 +32,17 @@ To generate configs:
 ./helper.sh config
 ```
 
+#### Environment variables
+Name | Description
+---- | ----
+`SECRET_KEY` | Django secret key. For generate new once, you can use service https://djecrety.ir/
+`DEBUG` | Flag to tell django work on debug mode or not.
+`DB_NAME` | PostgreSQL db name.
+`DB_USER` | PostgreSQL db user.
+`DB_PASSWORD` | PostgeSQL db password.
+
+Also looking at `.env.sample`.
+
 To copy schema.json from kernel to client (Use `-d` flag to generate it from kernel):
 ```bash
 ./helper.sh gql

@@ -41,7 +41,7 @@ Name | Description
 `DB_USER` | PostgreSQL db user.
 `DB_PASSWORD` | PostgeSQL db password.
 
-Also looking at `.env.sample`.
+Also, look at `.env.sample`.
 
 To copy schema.json from kernel to client (Use `-d` flag to generate it from kernel):
 ```bash

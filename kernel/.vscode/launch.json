@@ -1,11 +1,10 @@
 {
-    "version": "0.2.0",
     "configurations": [
         {
             "name": "kernel debug",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/manage.py",
+            "program": "${workspaceFolder}/dmanage.py",
             "args": [
                 "runserver",
                 "0.0.0.0:8000"

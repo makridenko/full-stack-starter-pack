@@ -11,7 +11,7 @@ import Face from '@components/Face';
 import styled from 'styled-components';
 
 /* UI-Kit */
-import { GlobalStyles } from './ui-kit/global-styles';
+import { GlobalStyles } from '@ui-kit/global-styles';
 
 /* Styled Components */
 const StyledApp = styled.div`

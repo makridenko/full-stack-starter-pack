@@ -40,8 +40,9 @@ Name | Description
 `DB_NAME` | PostgreSQL db name.
 `DB_USER` | PostgreSQL db user.
 `DB_PASSWORD` | PostgeSQL db password.
+`REACT_APP_BACKEND_URL` | Endpoint for backend (In file `client/.env`)
 
-Also, look at `.env.sample`.
+Also, look at `.env.example` in `kernel` and `client`.
 
 To copy schema.json from kernel to client (Use `-d` flag to generate it from kernel):
 ```bash

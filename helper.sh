@@ -8,6 +8,11 @@ if [[ $1 = 'config' ]]; then
     echo "Don't forget to change your SECRET_KEY"
     echo "https://djecrety.ir/ can help you!"
     cat ./kernel/config/local_settings.example >> ./kernel/config/local_settings.py
+
+    echo
+    # Client configs
+    cat ./client/.env.example >> ./client/.env
+    echo "Don't forget to change env file in client application"
     exit 1
 fi
 
